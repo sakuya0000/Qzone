@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <asp:Label ID="Lab_Name" runat="server" Text="Text_Name"></asp:Label>的空间
+        <br />
+        <asp:Button ID="Btn_MyMainPage" runat="server" Text="我的主页" OnClick="Btn_MyMainPage_Click"/>
+        <asp:Button ID="Btn_Journal" runat="server" Text="日志" OnClick="Btn_Journal_Click"/>
+        <asp:Button ID="Btn_Album" runat="server" Text ="相册" OnClick="Btn_Album_Click" />
+        <asp:Button ID="Btn_SaySay" runat="server" Text="说说" OnClick="Btn_SaySay_Click" />
+        <asp:Button ID="Btn_MainInf" runat="server" Text="个人档" OnClick="Btn_MainInf_Click" />
+        <asp:Button ID="Btn_Music" runat="server" Text="音乐" OnClick="Btn_Music_Click"/>
+    </div>
+    </form>
+</body>
+</html>
