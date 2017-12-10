@@ -10,19 +10,23 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" enctype="multipart/form-data">
     <div>
+        <asp:Label ID="Lab_Name" runat="server" Text="Text_Name" ForeColor="#cc33ff" Font-Size="25px"></asp:Label>
+        <span style="font-size:25px">的空间</span>
+        <br />
+        <asp:Button ID="Btn_MyMainPage" runat="server" Text="主页" OnClick="Btn_MyMainPage_Click" BorderStyle="Double"/>
+        <asp:Button ID="Btn_Journal" runat="server" Text="日志" OnClick="Btn_Journal_Click" BorderStyle="Double"/>
+        <asp:Button ID="Btn_Album" runat="server" Text ="相册" OnClick="Btn_Album_Click" BorderStyle="Double"/>
+        <asp:Button ID="Btn_Message_Board" runat="server" Text="留言板" OnClick="Btn_Message_Board_Click" BorderStyle="Double" />
+        <asp:Button ID="Btn_SaySay" runat="server" Text="说说" OnClick="Btn_SaySay_Click"  BorderStyle="Double"/>
+        <asp:Button ID="Btn_MainInf" runat="server" Text="个人档" OnClick="Btn_MainInf_Click" BorderStyle="Double"/>
+        <asp:Button ID="Btn_Friend" runat="server" Text="好友" OnClick="Btn_Friend_Click" BorderStyle="Double" />
+        <asp:Button ID="Btn_Back" runat="server" Text="返回个人中心" OnClick="Btn_Back_Click" BorderStyle="Double" />
+        <asp:Button ID="Btn_Close" runat="server" Text="注销" OnClick="Btn_Close_Click" BorderStyle="Double" />
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
-        <asp:Label ID="Lab_Name" runat="server" Text="Text_Name"></asp:Label>的空间
-        <br />
-        <asp:Button ID="Btn_MyMainPage" runat="server" Text="我的主页" OnClick="Btn_MyMainPage_Click"/>
-        <asp:Button ID="Btn_Journal" runat="server" Text="日志" OnClick="Btn_Journal_Click"/>
-        <asp:Button ID="Btn_Album" runat="server" Text ="相册" OnClick="Btn_Album_Click" />
-        <asp:Button ID="Btn_SaySay" runat="server" Text="说说" OnClick="Btn_SaySay_Click" />
-        <asp:Button ID="Btn_MainInf" runat="server" Text="个人档" OnClick="Btn_MainInf_Click" />
-        <asp:Button ID="Btn_Music" runat="server" Text="音乐" OnClick="Btn_Music_Click"/>
     </div>
     </form>
 </body>
