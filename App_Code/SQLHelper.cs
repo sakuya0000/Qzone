@@ -10,7 +10,7 @@ using System.Web;
 /// </summary>
 public class SQLHelper
 {
-    static string str = @"server=DESKTOP-F3H8PQV;Integrated Security=SSPI;database=Demo;";
+    static string str = @"server=DESKTOP-KH8JE5M;Integrated Security=SSPI;database=QZone;";
     public SQLHelper()
     {
         //
